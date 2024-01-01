@@ -1,0 +1,45 @@
+// Fonts
+@font-face {
+    font-family: 'agrandir_grand_heavy';
+    src: url('../fonts/agrandir-grandheavy-webfont.woff2') format('woff2'),
+         url('../fonts/agrandir-grandheavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'agrandir_grand_light';
+    src: url('../fonts/agrandir-grandlight-webfont.woff2') format('woff2'),
+         url('../fonts/agrandir-grandlight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Variables
+$base-font: 'Montserrat', sans-serif;
+$heading-font: 'agrandir_grand_heavy';
+$heading-font-light: 'agrandir_grand_light';
+$light: #FFFFFF;
+$dark: #131D1E;
+$lemon: #CAFC01;
+
+// General Configs
+body {
+    font-family: $base-font;
+    background-color: $dark;
+    color: $light;
+}
+
+.block {
+    padding: 60px 0;
+}
+
+a {
+    color: $light;
+}
+
+.wrapper {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}

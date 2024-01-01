@@ -1,0 +1,206 @@
+@font-face {
+  font-family: "agrandir_grand_heavy";
+  src: url("../fonts/agrandir-grandheavy-webfont.woff2") format("woff2"), url("../fonts/agrandir-grandheavy-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "agrandir_grand_light";
+  src: url("../fonts/agrandir-grandlight-webfont.woff2") format("woff2"), url("../fonts/agrandir-grandlight-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #131D1E;
+  color: #FFFFFF;
+}
+
+.block {
+  padding: 60px 0;
+}
+
+a {
+  color: #FFFFFF;
+}
+
+.wrapper {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.block.services .intro {
+  padding: 0 80px;
+  display: flex;
+  align-items: center;
+  gap: clamp(20px, 10vw, 80px);
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 1185px) {
+  .block.services .intro {
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 920px) {
+  .block.services .intro {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 40px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .block.services .intro {
+    padding: 0 20px;
+  }
+}
+.block.services .intro .large__title, .block.services .intro p {
+  flex: 1;
+}
+.block.services .intro .large__title {
+  text-transform: uppercase;
+  font-family: "agrandir_grand_heavy";
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 70px;
+}
+@media screen and (max-width: 1185px) {
+  .block.services .intro .large__title {
+    font-size: 36px;
+    line-height: 50px;
+  }
+}
+.block.services .intro .large__title span {
+  color: #CAFC01;
+}
+.block.services .intro p {
+  flex: 1;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  opacity: 0.6;
+}
+@media screen and (max-width: 1185px) {
+  .block.services .intro p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .block.services .intro p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+.block.services .services__list--item a {
+  padding: 60px 40px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  gap: clamp(20px, 10vw, 80px);
+  transition: all 250ms ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  .block.services .services__list--item a {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .block.services .services__list--item a {
+    padding: 20px;
+  }
+}
+.block.services .services__list--item a:hover {
+  color: #CAFC01;
+  border-bottom-color: #CAFC01;
+}
+.block.services .services__list--item .service-title-grp {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  flex: 1;
+}
+@media screen and (max-width: 768px) {
+  .block.services .services__list--item .service-title-grp {
+    gap: 10px;
+  }
+}
+.block.services .services__list--item .service-title-grp .index {
+  font-family: "agrandir_grand_light";
+  font-size: 28px;
+  font-weight: 200;
+  padding-top: 2px;
+}
+@media screen and (max-width: 768px) {
+  .block.services .services__list--item .service-title-grp .index {
+    padding-top: 0;
+    font-size: 18px;
+  }
+}
+.block.services .services__list--item .service-title-grp .title-grp {
+  display: flex;
+  gap: 40px;
+}
+@media screen and (max-width: 768px) {
+  .block.services .services__list--item .service-title-grp .title-grp {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+.block.services .services__list--item .service-title-grp .title {
+  text-transform: capitalize;
+  font-family: "agrandir_grand_heavy";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+}
+@media screen and (max-width: 1185px) {
+  .block.services .services__list--item .service-title-grp .title {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .block.services .services__list--item .service-title-grp .title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+.block.services .services__list--item .service-title-grp .project-count {
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.6;
+  padding-left: 80px;
+}
+@media screen and (max-width: 768px) {
+  .block.services .services__list--item .service-title-grp .project-count {
+    padding-left: 0;
+    font-size: 16px;
+  }
+}
+.block.services .services__list--item .service-excerpt {
+  flex: 1;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  opacity: 0.6;
+}
+@media screen and (max-width: 1185px) {
+  .block.services .services__list--item .service-excerpt {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .block.services .services__list--item .service-excerpt {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

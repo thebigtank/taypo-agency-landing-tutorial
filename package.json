@@ -1,0 +1,14 @@
+{
+  "name": "taypo-agency-landing",
+  "version": "1.0.0",
+  "description": "Youtube tutorial purposes",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass -w css/style.scss css/style.css"
+  },
+  "author": "thebigtank",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.69.6"
+  }
+}
