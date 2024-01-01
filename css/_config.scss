@@ -23,6 +23,12 @@ $light: #FFFFFF;
 $dark: #131D1E;
 $lemon: #CAFC01;
 
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	cursor: none;
+}
+
 // General Configs
 body {
     font-family: $base-font;

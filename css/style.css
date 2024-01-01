@@ -10,6 +10,12 @@
   font-weight: normal;
   font-style: normal;
 }
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  cursor: none;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #131D1E;
@@ -201,6 +207,56 @@ a {
     font-size: 15px;
     line-height: 22px;
   }
+}
+
+.custom__cursor, .custom__cursor-content {
+  border-radius: 50%;
+  position: fixed;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+  transition: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.6, 0, 0, 1);
+  pointer-events: none;
+}
+.custom__cursor::before, .custom__cursor-content::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  margin-left: -5px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  transform: scale(1.4);
+  box-shadow: inset 0 0 0 140px #fff;
+  transition: transform, box-shadow;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.6, 0, 0, 1);
+}
+
+.negative__effect {
+  mix-blend-mode: difference;
+  backdrop-filter: contrast(150%) saturate(500%);
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+}
+
+.lemon__cursor::before {
+  box-shadow: inset 0 0 0 10px #CAFC01;
+}
+
+.cursor-scale-up {
+  transform: scale(12) translate(-50%, -50%);
+}
+
+.cursor-scale-down {
+  transform: scale(1) translate(-50%, -50%);
 }
 
 /*# sourceMappingURL=style.css.map */
