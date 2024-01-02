@@ -233,7 +233,7 @@ a {
   border-radius: 50%;
   box-sizing: border-box;
   transform: scale(1.4);
-  box-shadow: inset 0 0 0 140px #fff;
+  box-shadow: inset 0 0 0 140px #FFFFFF;
   transition: transform, box-shadow;
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0.6, 0, 0, 1);
